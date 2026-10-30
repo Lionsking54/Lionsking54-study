@@ -21,7 +21,7 @@ h1{font-size:58px;line-height:1;margin:18px 0 20px}h1 em{font-style:normal;color
 .searchbar button{background:var(--gold);border:0;border-radius:10px;padding:10px 16px;font-weight:bold}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}.chips button{background:#0b1728;border:1px solid #32465e;color:#aebbc9;border-radius:999px;padding:8px 11px;font-size:12px}
 .controls{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:20px 0}.controls label,.upload-label{display:block;color:#8797aa;font-size:10px;letter-spacing:1.5px;font-weight:bold;margin-bottom:8px}
-select, input[type=text], input[type=search]{width:100%;background:#081422;color:white;border:1px solid #34485f;border-radius:10px;padding:12px}
+select,input[type="text"],input[type="search"]{width:100%;background:#081422;color:white;border:1px solid #34485f;border-radius:10px;padding:12px}
 section.content{padding:65px 7%;border-top:1px solid #1d2b40}.section-head{max-width:850px;margin-bottom:28px}.section-head h2{font-size:42px;margin:10px 0}.muted{color:var(--muted)}
 .result-list{display:grid;gap:12px;margin-top:15px}.result-card{padding:18px;background:#132239;border:1px solid #344a65;border-radius:16px}.result-card h3{font-size:23px;margin:8px 0}.meta{color:var(--green);font-size:10px;letter-spacing:1.3px;font-weight:bold}.result-card p{margin:8px 0}.result-card mark{background:#54451e;color:#ffe19a}
 .empty{padding:35px;text-align:center;color:#8291a4;border:1px dashed #34485f;border-radius:16px;margin-top:15px}
@@ -43,10 +43,10 @@ footer{padding:35px 7%;border-top:1px solid #23354a;color:#8392a6;font-size:12px
 <main>
 <section class="hero" id="home">
   <div>
-    <div class="eyebrow">CAMBRIDGE Â· EDEXCEL Â· IGCSE Â· AS Â· A LEVEL</div>
+    <div class="eyebrow">CAMBRIDGE · EDEXCEL · IGCSE · AS · A LEVEL</div>
     <h1>Find the paper.<br><em>Find the question.</em></h1>
     <p>Search your uploaded past papers by subject, year, syllabus code, or even a phrase inside a question. Add your PDFs once in this browser and use them in the paper library and search.</p>
-    <a class="btn gold" href="#ai-search">Try AI Search â†“</a>
+    <a class="btn gold" href="#ai-search">Try AI Search ↓</a>
   </div>
   <div class="panel">
     <div class="eyebrow">SMART PAPER SEARCH</div><h2>What are you revising?</h2>
@@ -57,7 +57,7 @@ footer{padding:35px 7%;border-top:1px solid #23354a;color:#8392a6;font-size:12px
 </section>
 
 <section class="content" id="ai-search">
-  <div class="section-head"><div class="eyebrow">01 Â· AI-STYLE SEARCH</div><h2>Search by meaning or exact words.</h2><p>Search scans the paper names, subject codes, years, and extracted PDF text. It ranks the closest matches first. This works locally in your browser; it is a smart keyword search, not a connected ChatGPT-style AI service.</p></div>
+  <div class="section-head"><div class="eyebrow">01 · AI-STYLE SEARCH</div><h2>Search by meaning or exact words.</h2><p>Search scans the paper names, subject codes, years, and extracted PDF text. It ranks the closest matches first. This works locally in your browser; it is a smart keyword search, not a connected ChatGPT-style AI service.</p></div>
   <div class="panel">
     <div class="controls">
       <div><label>EXAM BOARD</label><select id="filterBoard"><option value="">All boards</option><option>Cambridge</option><option>Edexcel</option><option>Other</option></select></div>
@@ -70,7 +70,7 @@ footer{padding:35px 7%;border-top:1px solid #23354a;color:#8392a6;font-size:12px
 </section>
 
 <section class="content" id="pastpapers">
-  <div class="section-head"><div class="eyebrow">02 Â· YEARLY PAPER LIBRARY</div><h2>Your past papers, working in one place.</h2><p>Upload PDFs, add the subject details, and they will appear in the library. Click a paper to open it and search for words inside it.</p></div>
+  <div class="section-head"><div class="eyebrow">02 · YEARLY PAPER LIBRARY</div><h2>Your past papers, working in one place.</h2><p>Upload PDFs, add the subject details, and they will appear in the library. Click a paper to open it and search for words inside it.</p></div>
   <div class="paper-layout">
     <aside class="paper-side">
       <h3>Add past papers</h3>
@@ -92,17 +92,17 @@ footer{padding:35px 7%;border-top:1px solid #23354a;color:#8392a6;font-size:12px
     <div class="paper-main">
       <div class="paper-top"><div><div class="eyebrow">PAPER ARCHIVE</div><h3 id="libraryTitle">Your paper library</h3></div><span id="paperCount" class="small muted">0 papers</span></div>
       <div id="paperList" class="paper-list"><div class="empty">No papers added yet. Use the form on the left to add your first PDF.</div></div>
-      <div id="paperViewer" class="viewer"><div class="viewer-empty"><div style="font-size:40px">ðŸ“„</div><h3>Select a paper</h3><p>The PDF will open here after you select it from your library.</p></div></div>
+      <div id="paperViewer" class="viewer"><div class="viewer-empty"><div style="font-size:40px">📄</div><h3>Select a paper</h3><p>The PDF will open here after you select it from your library.</p></div></div>
     </div>
   </div>
 </section>
 
 <section class="content" id="how">
-  <div class="section-head"><div class="eyebrow">03 Â· HOW IT WORKS</div><h2>Three steps. No broken paper slots.</h2></div>
+  <div class="section-head"><div class="eyebrow">03 · HOW IT WORKS</div><h2>Three steps. No broken paper slots.</h2></div>
   <div class="panel"><p><b>1.</b> Choose your PDFs and fill in the board, level, subject, syllabus code and year.</p><p><b>2.</b> Click <b>Add selected PDFs</b>. The site saves the files in your current browser and extracts searchable text from each PDF.</p><p><b>3.</b> Use AI Search to find a paper by metadata or a phrase inside its questions. Click a result to open that paper in the viewer.</p><p class="small">Scanned PDFs that contain only images may not have searchable text unless OCR has been applied first.</p></div>
 </section>
 </main>
-<footer>Lionsking54 Â· Free Study Desk Â· Upload only papers you have permission to store or share.</footer>
+<footer>Lionsking54 · Free Study Desk · Upload only papers you have permission to store or share.</footer>
 
 <script>
 if (window.pdfjsLib) pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
@@ -143,8 +143,8 @@ function guessYear(name){const m=name.match(/\b(202[0-6])\b/);return m?m[1]:$('u
 async function addSelectedPapers(){
  const files=[...$('pdfUpload').files];
  if(!files.length){$('uploadStatus').textContent='Choose at least one PDF first.';return;}
- if(!db){$('uploadStatus').textContent='Opening local paper storageâ€¦';try{await openDB()}catch(e){$('uploadStatus').textContent='Storage error: '+e.message;return;}}
- $('uploadStatus').textContent='Adding papers and reading PDF textâ€¦';
+ if(!db){$('uploadStatus').textContent='Opening local paper storage…';try{await openDB()}catch(e){$('uploadStatus').textContent='Storage error: '+e.message;return;}}
+ $('uploadStatus').textContent='Adding papers and reading PDF text…';
  let added=0;
  for(const file of files){
   if(file.type!=='application/pdf'&&!file.name.toLowerCase().endsWith('.pdf'))continue;
@@ -166,12 +166,12 @@ async function loadPapers(){
 function renderPaperList(){
  $('paperCount').textContent=`${papers.length} paper${papers.length===1?'':'s'}`;
  if(!papers.length){$('paperList').innerHTML='<div class="empty">No papers added yet. Use the form on the left to add your first PDF.</div>';return;}
- $('paperList').innerHTML=papers.map(p=>`<button class="paper-item ${p.id===activePaperId?'active':''}" onclick="openPaper('${p.id}')"><b>${escapeHTML(p.name)}</b><br><span class="small">${escapeHTML(p.subject)} Â· ${escapeHTML(p.code||'No code')} Â· ${escapeHTML(p.year)} Â· ${escapeHTML(p.board)}</span></button>`).join('');
+ $('paperList').innerHTML=papers.map(p=>`<button class="paper-item ${p.id===activePaperId?'active':''}" onclick="openPaper('${p.id}')"><b>${escapeHTML(p.name)}</b><br><span class="small">${escapeHTML(p.subject)} · ${escapeHTML(p.code||'No code')} · ${escapeHTML(p.year)} · ${escapeHTML(p.board)}</span></button>`).join('');
 }
 async function openPaper(id){
  const p=papers.find(x=>x.id===id);if(!p)return;activePaperId=id;renderPaperList();
  const url=URL.createObjectURL(p.blob);
- $('paperViewer').innerHTML=`<div class="paper-top"><div><div class="eyebrow">${escapeHTML(p.board)} Â· ${escapeHTML(p.level)}</div><h3>${escapeHTML(p.name)}</h3><div class="small muted">${escapeHTML(p.subject)} Â· ${escapeHTML(p.code||'No syllabus code')} Â· ${escapeHTML(p.year)}</div></div><button class="btn" onclick="downloadPaper('${p.id}')">Download</button></div><iframe title="Past paper PDF viewer" src="${url}"></iframe>`;
+ $('paperViewer').innerHTML=`<div class="paper-top"><div><div class="eyebrow">${escapeHTML(p.board)} · ${escapeHTML(p.level)}</div><h3>${escapeHTML(p.name)}</h3><div class="small muted">${escapeHTML(p.subject)} · ${escapeHTML(p.code||'No syllabus code')} · ${escapeHTML(p.year)}</div></div><button class="btn" onclick="downloadPaper('${p.id}')">Download</button></div><iframe title="Past paper PDF viewer" src="${url}"></iframe>`;
 }
 function downloadPaper(id){const p=papers.find(x=>x.id===id);if(!p)return;const url=URL.createObjectURL(p.blob);const a=document.createElement('a');a.href=url;a.download=p.name;a.click();setTimeout(()=>URL.revokeObjectURL(url),2000);}
 function quickSearch(term){$('aiInput').value=term;searchPapers();}
@@ -193,7 +193,7 @@ function searchPapers(){
   if(!terms.length)score=1;
   return {p,score,snippets:[...new Set(snippets)].slice(0,2)};
  }).filter(x=>x&&x.score>0).sort((a,b)=>b.score-a.score);
- const markup=ranked.length?`<div class="result-list">${ranked.slice(0,20).map(x=>`<article class="result-card"><div class="meta">${x.score>=terms.length*4?'METADATA MATCH':'PAPER TEXT MATCH'} Â· SCORE ${x.score}</div><h3>${escapeHTML(x.p.name)}</h3><p>${escapeHTML(x.p.board)} Â· ${escapeHTML(x.p.level)} Â· ${escapeHTML(x.p.subject)} Â· ${escapeHTML(x.p.code||'No code')} Â· ${escapeHTML(x.p.year)}</p>${x.snippets.map(s=>`<p class="small">â€œâ€¦${escapeHTML(s)}â€¦â€</p>`).join('')}<button class="btn gold" onclick="openPaper('${x.p.id}');document.getElementById('pastpapers').scrollIntoView({behavior:'smooth'})">Open paper â†’</button></article>`).join('')}</div>`:
+ const markup=ranked.length?`<div class="result-list">${ranked.slice(0,20).map(x=>`<article class="result-card"><div class="meta">${x.score>=terms.length*4?'METADATA MATCH':'PAPER TEXT MATCH'} · SCORE ${x.score}</div><h3>${escapeHTML(x.p.name)}</h3><p>${escapeHTML(x.p.board)} · ${escapeHTML(x.p.level)} · ${escapeHTML(x.p.subject)} · ${escapeHTML(x.p.code||'No code')} · ${escapeHTML(x.p.year)}</p>${x.snippets.map(s=>`<p class="small">“…${escapeHTML(s)}…”</p>`).join('')}<button class="btn gold" onclick="openPaper('${x.p.id}');document.getElementById('pastpapers').scrollIntoView({behavior:'smooth'})">Open paper →</button></article>`).join('')}</div>`:
   `<div class="empty">${papers.length?'No matches found. Try fewer words, a syllabus code, or change the filters.':'No papers uploaded yet. Add PDFs in the Past Papers section first.'}</div>`;
  $('searchResults').innerHTML=markup;$('aiResults').innerHTML=markup;
 }
